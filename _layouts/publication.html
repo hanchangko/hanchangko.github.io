@@ -1,0 +1,29 @@
+---
+layout: default
+---
+{% include base_path %}
+<div id="main" role="main">
+  {% include sidebar.html %}
+  <article class="page" itemscope itemtype="https://schema.org/ScholarlyArticle">
+    <div class="page__inner-wrap">
+      <header>
+        <h1 class="page__title" itemprop="headline">{{ page.title | escape }}</h1>
+        <p>{{ page.authors | escape }}</p>
+        <p>
+        {% if page.status == 'Published' %}
+          Published in <em>{{ page.journal | escape }}</em>, {{ page.publication_year }}.
+        {% elsif page.status == 'Accepted' %}
+          Accepted in <em>{{ page.journal | escape }}</em>.
+        {% endif %}
+        {% if page.language_note %} ({{ page.language_note | escape }}){% endif %}
+        </p>
+      </header>
+      <section class="page__content" itemprop="text">
+        {{ content }}
+        {% if page.doi and page.doi != '' %}
+          <p><a href="https://doi.org/{{ page.doi | escape }}">Read the article</a></p>
+        {% endif %}
+      </section>
+    </div>
+  </article>
+</div>

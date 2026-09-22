@@ -4,33 +4,33 @@ title: "Publications"
 permalink: /publications/
 author_profile: true
 ---
-
-{% if site.author.googlescholar %}
-  <div class="wordwrap">You can also find my articles on <a href="{{site.author.googlescholar}}">my Google Scholar profile</a>.</div>
+{% if site.author.googlescholar and site.author.googlescholar != '' %}
+<p>You can also find my articles on <a href="{{ site.author.googlescholar | escape }}">Google Scholar</a>.</p>
 {% endif %}
-
-{% include base_path %}
-
-<!-- New style rendering if publication categories are defined -->
-{% if site.publication_category %}
-  {% for category in site.publication_category  %}
-    {% assign title_shown = false %}
-    {% for post in site.publications reversed %}
-      {% if post.category != category[0] %}
-        {% continue %}
-      {% endif %}
-      {% unless title_shown %}
-        <h2>{{ category[1].title }}</h2><hr />
-        {% assign title_shown = true %}
-      {% endunless %}
-      {% include archive-single.html %}
+{% assign papers = site.publications | sort: 'publication_order' %}
+{% assign statuses = 'Published|Accepted' | split: '|' %}
+{% for status in statuses %}
+  {% assign group = papers | where: 'status', status %}
+  {% if group.size > 0 %}
+    {% case status %}
+    {% when 'Published' %}<h2>Published Articles</h2>
+    {% when 'Accepted' %}<h2>Accepted Articles</h2>
+    {% endcase %}
+    {% for paper in group %}
+      <article class="archive__item">
+        <h3><a href="{{ paper.url | relative_url }}">{{ paper.title | escape }}</a></h3>
+        <p>{{ paper.authors | escape }}.<br>
+        {% if status == 'Published' %}
+          {{ paper.publication_year }}. <em>{{ paper.journal | escape }}</em>, {{ paper.details | escape }}.
+        {% elsif status == 'Accepted' %}
+          <strong>Accepted</strong> in <em>{{ paper.journal | escape }}</em>.
+        {% else %}
+          <strong>{{ paper.status | escape }}</strong>.
+        {% endif %}
+        {% if paper.language_note %} ({{ paper.language_note | escape }}){% endif %}
+        {% if paper.doi != '' %}<br><a href="https://doi.org/{{ paper.doi | escape }}">View article (DOI)</a>{% endif %}
+        </p>
+      </article>
     {% endfor %}
-  {% endfor %}
-{% else %}
-  {% for post in site.publications reversed %}
-    {% include archive-single.html %}
-  {% endfor %}
-{% endif %}
-
-
-
+  {% endif %}
+{% endfor %}
