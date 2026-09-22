@@ -14,3 +14,6 @@ doi: "10.1029/2019JD030287"
 author_profile: true
 ---
 
+We apply Thorpe analysis to high-resolution radiosonde profiles from 68 U.S. stations to characterize turbulence through the troposphere and lower stratosphere. The analysis uses four years of observations across the network, supplemented by twelve-year records at four stations.
+
+Turbulent layers are generally thicker and stronger in the troposphere. Turbulence exhibits pronounced seasonal variation, with stronger values in summer, and enhanced tropospheric turbulence over mountainous regions. The study establishes an observational baseline for investigating turbulence beyond the coverage of routine aircraft measurements.

@@ -15,3 +15,6 @@ author_profile: true
 language_note: "In Korean"
 ---
 
+We use high-resolution Weather Research and Forecasting (WRF) simulations to investigate two turbulence encounters associated with aircraft accidents near the Korean Peninsula in 2020 and 2021.
+
+In the first case, strong wind shear associated with an upper-level front and tropopause folding produces conditions favorable for Kelvin–Helmholtz instability. In the second, a localized front and the gravity waves it generates enhance instability. The cases illustrate how frontal dynamics, wind shear, and gravity waves can combine to produce hazardous aviation turbulence.

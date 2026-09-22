@@ -14,3 +14,6 @@ doi: "10.1016/j.atmosres.2021.105891"
 author_profile: true
 ---
 
+We investigate potential sources of free-atmospheric turbulence using six years of high-resolution radiosonde observations from 68 U.S. stations and environmental conditions from ERA5 reanalysis. We also introduce an effective dissipation measure that combines turbulence intensity with turbulent-layer thickness.
+
+Turbulence detected by the Thorpe method is associated with weak static stability across the analyzed altitudes. Wind shear, mountain-wave effects, and convection show additional associations that depend on altitude and region. The findings help distinguish the environments favorable for different turbulence sources.

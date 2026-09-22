@@ -14,3 +14,6 @@ doi: "10.1016/j.atmosres.2023.107037"
 author_profile: true
 ---
 
+We analyze four years of high-resolution radiosonde observations from five South Korean stations to characterize wind, vertical wind shear, and atmospheric stability below 1,500 m. A self-organizing map is used to identify large-scale weather patterns associated with convective and shear instabilities.
+
+The observations reveal strong seasonal and regional differences, influenced by marine air, local terrain, and cold-air advection. Comparisons with an operational local forecasting system show that many observed fine-scale instabilities are underrepresented, highlighting the value of high-resolution measurements for evaluating lower-atmospheric conditions.
