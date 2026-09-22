@@ -13,7 +13,7 @@ My research focuses on atmospheric turbulence: where it occurs, how it forms, an
 
 I develop and validate observation-based methods for estimating turbulence and work on evaluating and improving aviation turbulence forecasts. My research also examines how climate change and solar geoengineering may affect atmospheric turbulence and aviation hazards.
 
-I received my Ph.D. from Yonsei University in 2025 under the supervision of Professor Hye-Yeong Chun. My dissertation investigated the characteristics and sources of turbulence in the free atmosphere and their application to aviation turbulence. Before joining the University of Hawaiʻi at Mānoa in January 2026, I was a postdoctoral researcher at Yonsei University. I have also undertaken visiting research collaborations at the National Center for Atmospheric Research (NCAR) and the European Centre for Medium-Range Weather Forecasts (ECMWF).
+I received my Ph.D. from Yonsei University in 2025. My dissertation investigated the characteristics and sources of turbulence in the free atmosphere and their application to aviation turbulence. Before joining the University of Hawaiʻi at Mānoa in January 2026, I was a postdoctoral researcher at Yonsei University. I have also undertaken visiting research collaborations at the National Center for Atmospheric Research (NCAR) and the European Centre for Medium-Range Weather Forecasts (ECMWF).
 
 ## Research Interests
 
