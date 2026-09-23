@@ -1,0 +1,129 @@
+---
+layout: archive
+title: "Research"
+permalink: /research/
+author_profile: true
+description: "Atmospheric turbulence research: observations, physical mechanisms, aviation forecasting, and climate."
+---
+
+<style>
+
+.research-page { line-height: 1.7; }
+.research-page .research-intro { font-size: 1.08em; }
+.research-page .research-nav { display: flex; flex-wrap: wrap; gap: .35em 1.15em; margin: 1.3em 0 2em; padding: 0 0 1em; border-bottom: 1px solid #d8dfe3; font-size: .9em; }
+.research-page section { margin: 2.7em 0; scroll-margin-top: 2em; }
+.research-page h2 { margin-bottom: .6em; }
+.research-page h3 { margin-top: 1.6em; }
+.research-page figure { display: block; margin: 1.6em 0 1em; }
+.research-page .research-figure-link { display: block; padding: .6em; background: #fff; border: 1px solid #e5e9eb; border-radius: 4px; }
+.research-page figure img { display: block; width: 100%; height: auto; margin: 0; }
+.research-page figcaption { margin-top: .8em; text-align: left; font-size: .8em; line-height: 1.6; color: inherit; }
+.research-page .research-source { font-size: .85em; line-height: 1.65; }
+@media (max-width: 600px) { .research-page .research-nav { gap: .4em .9em; } .research-page .research-figure-link { padding: .2em; } }
+
+.research-page .research-block { margin-top: 1.8em; }
+
+</style>
+
+<div class="research-page">
+<p class="research-intro">I study where atmospheric turbulence occurs, how it forms, and how we can better anticipate its impacts on aviation. My research connects high-resolution radiosonde and aircraft observations with numerical weather prediction and climate-model experiments, linking small-scale atmospheric processes to forecasting and a changing climate.</p>
+<nav class="research-nav" aria-label="Research topics">
+<a href="#observations">Observations</a><a href="#mechanisms">Physical mechanisms</a>
+<a href="#forecasting">Aviation forecasting</a><a href="#climate">Changing climate</a>
+</nav>
+<section id="observations">
+<h2>Observing and estimating atmospheric turbulence</h2>
+<div class="research-block">
+<p>I develop methods that turn high-resolution weather-balloon observations into estimates of atmospheric turbulence. Our minimum-Richardson-number approach accounts for wind shear and atmospheric stability, extending estimation beyond temperature overturns to include turbulence-prone, statically stable layers.</p>
+<p>A sounding from Grand Junction, Colorado, illustrates what the method adds. On 19 April 2023, it identified all three overturning layers captured by the Thorpe method and additional layers with positive Richardson numbers below 0.25, associated with strong vertical wind shear. The dissipation estimates in the overturning layers were comparable in magnitude to the shear-based Thorpe formulation. This case shows how the approach extends turbulence estimation into statically stable, strongly sheared conditions.</p>
+<figure>
+<a class="research-figure-link" href="{{ '/images/research/essd-method-comparison.png' | relative_url }}" aria-label="View larger figure: Observing and estimating atmospheric turbulence">
+<img src="{{ '/images/research/essd-method-comparison.png' | relative_url }}" alt="Seven vertical profiles from Grand Junction compare temperature, winds, stability, wind shear, Richardson number, and dissipation estimates from Thorpe and minimum-Richardson-number methods." loading="lazy" decoding="async"></a>
+<figcaption>A radiosonde profile at Grand Junction, Colorado, at 1200 UTC on 19 April 2023. Panels (a-e) describe the observed atmospheric structure; panels (f-g) compare Thorpe and minimum-Richardson-number dissipation estimates. In (g), red marks negative-Ri layers and blue marks positive-Ri layers. The dashed horizontal line is the tropopause. Source: Ko and Chun (2026, ESSD), Fig. 2.</figcaption>
+</figure>
+</div>
+<div class="research-block">
+<h3>From individual profiles to global patterns</h3>
+<p>Applying this method to ten years of observations (2015-2024) from 336 stations reveals how estimated turbulence varies with altitude, season, and location. Shear-associated turbulence is more frequent in winter, whereas overturning turbulence in the troposphere peaks in summer. This record helps distinguish turbulence regimes and provides a complementary resource for evaluating forecasts where aircraft measurements are sparse.</p>
+<figure>
+<a class="research-figure-link" href="{{ '/images/research/essd-global-patterns.png' | relative_url }}" aria-label="View larger figure: From individual profiles to global patterns">
+<img src="{{ '/images/research/essd-global-patterns.png' | relative_url }}" alt="Four station maps of effective turbulence dissipation for positive- and negative-Richardson-number regimes in the troposphere and stratosphere." loading="lazy" decoding="async"></a>
+<figcaption>Station-based patterns of effective turbulence dissipation during 2015-2024, separated into positive- and negative-Richardson-number regimes in the troposphere and stratosphere. Effective dissipation accounts for both turbulence intensity and turbulent-layer thickness. Source: Ko and Chun (2026), Fig. 8.</figcaption>
+</figure>
+</div>
+<p class="research-source"><strong>Related paper:</strong> Ko and Chun (2026), <em>Earth System Science Data</em>. <a href="https://doi.org/10.5194/essd-18-1905-2026">Read the article</a> &middot; <a href="{{ '/publication/2026-radiosonde-turbulence-method' | relative_url }}">Publication summary</a></p>
+</section>
+<section id="mechanisms">
+<h2>Understanding how turbulence forms</h2>
+<div class="research-block">
+<p>I combine observations with high-resolution numerical simulations to investigate the processes that generate turbulence. For a case over Pennsylvania on 7 February 2020, I used the Weather Research and Forecasting (WRF) model to connect the observed turbulence to its atmospheric environment.</p>
+<p>The simulation reproduced the broad wind and geopotential patterns in ERA5 and key features of the radar-observed convective system. It also captured the negative potential-temperature gradient near 7.5 km seen in the radiosonde profile, reproducing the overturning signature used by the Thorpe method. Agreement across these scales provides a basis for examining the physical processes behind this event.</p>
+<figure>
+<a class="research-figure-link" href="{{ '/images/research/grl-simulation-validation.png' | relative_url }}" aria-label="View larger figure: Understanding how turbulence forms">
+<img src="{{ '/images/research/grl-simulation-validation.png' | relative_url }}" alt="ERA5 and WRF maps of winds and geopotential height, observed and simulated radar reflectivity, and radiosonde versus WRF potential-temperature-gradient profiles." loading="lazy" decoding="async"></a>
+<figcaption>Model evaluation for 7 February 2020. Panels (a-b) compare ERA5 and WRF winds and geopotential height at 350 hPa; (c-d) compare observed and simulated column-maximum radar reflectivity; (e) compares radiosonde (blue) and WRF (red) potential-temperature gradients. Negative gradients near 7.5 km indicate overturning. Red circles on the maps mark the observed turbulence location. Source: Ko and Chun (2026, GRL, accepted), Fig. 3.</figcaption>
+</figure>
+</div>
+<div class="research-block">
+<h3>Buoyancy gradients and vorticity feedback</h3>
+<p>Developing convection lifted the tropopause and weakened static stability beneath it, creating conditions favorable for overturning. The combined cross-sections below connect that environment to the local dynamics at the cloud boundary.</p>
+<p>In Fig. S7, the x-component of vorticity is dominated by horizontal variations in vertical velocity, while the contribution from vertical shear of the meridional wind is much smaller. Figure 6 shows neighboring upward and downward motions together with contrasting buoyancy gradients. These gradients generate vorticity, amplify vertical motions, and strengthen temperature perturbations and buoyancy gradients in turn. This feedback helps explain the growth of overturning at the cloud interface in this case.</p>
+<figure>
+<a class="research-figure-link" href="{{ '/images/research/grl-vorticity-buoyancy.png' | relative_url }}" aria-label="View larger figure: Buoyancy gradients and vorticity feedback">
+<img src="{{ '/images/research/grl-vorticity-buoyancy.png' | relative_url }}" alt="Upper row: Fig. S7 showing x-vorticity and its velocity-gradient components. Lower row: Fig. 6 showing vertical velocity and the meridional buoyancy gradient in the same WRF cross-section." loading="lazy" decoding="async"></a>
+<figcaption>Top, Fig. S7: x-vorticity, the meridional gradient of vertical velocity, and the vertical gradient of meridional velocity. Bottom, Fig. 6: vertical velocity and the meridional buoyancy gradient. All panels show the same WRF cross-section at 1129 UTC on 7 February 2020. Black contours are potential temperature, cyan contours mark the cloud boundary, and thick black segments mark the observed turbulence layer. Source: Ko and Chun (2026, GRL, accepted), Supporting Information Fig. S7 and main-text Fig. 6.</figcaption>
+</figure>
+</div>
+<p class="research-source"><strong>Related paper:</strong> Ko and Chun (2026, accepted), <em>Geophysical Research Letters</em>. <a href="{{ '/publication/thorpe-generation' | relative_url }}">Publication summary</a></p>
+</section>
+<section id="forecasting">
+<h2>Improving aviation turbulence forecasts</h2>
+<div class="research-block">
+<p>In collaboration with ECMWF, I evaluated 12-hour forecasts from its Integrated Forecasting System clear-air turbulence product (IFS-CAT) against commercial-aircraft observations from October 2022 to September 2023. The forecast map below shows the predicted eddy dissipation rate at 200 hPa, while the accompanying receiver operating characteristic (ROC) curves summarize performance over the full year.</p>
+<p>Forecast skill was strongest at 6-15 km, and ensemble-mean forecasts had higher areas under the ROC curve than deterministic forecasts. However, at the moderate-or-greater turbulence threshold, detection probabilities were below 0.1 across all altitude ranges. This gap between overall discrimination and detection of stronger events motivated the recalibration.</p>
+<figure>
+<a class="research-figure-link" href="{{ '/images/research/jgr-baseline-evaluation.png' | relative_url }}" aria-label="View larger figure: Improving aviation turbulence forecasts">
+<img src="{{ '/images/research/jgr-baseline-evaluation.png' | relative_url }}" alt="One row with two panels: original IFS-CAT 200 hPa forecast from Fig. 2(a) on the left and full-year ROC evaluation from Fig. 5 on the right." loading="lazy" decoding="async"></a>
+<figcaption>Left, Fig. 2(a): a 12-hour IFS-CAT forecast at 200 hPa initialized at 0000 UTC on 1 January 2023, with geopotential-height contours. Right, Fig. 5: ROC curves for October 2022-September 2023; solid and dashed lines show deterministic and ensemble-mean forecasts. Black, blue, and red denote 6-15, 3-6, and 0-3 km. Source: Ko et al. (2025, JGR).</figcaption>
+</figure>
+</div>
+<div class="research-block">
+<h3>Recalibration and forecast improvement</h3>
+<p>We developed two recalibration approaches: Option 1 updates the reference turbulence distribution using ten years of aircraft observations, while Option 2 optimizes the distribution parameters to improve skill while limiting false alarms. Both concentrate higher predicted intensities into more localized regions and reduce weaker background values.</p>
+<p>Tests for January and July 2023 showed improvements in both ROC skill and moderate-or-greater turbulence detection across three altitude ranges, with larger gains from Option 2. Independent observations from the 2019 SouthTRAC research-aircraft campaign also supported the improved intensity distribution. This work connects observed turbulence intensity with model predictions to support more reliable aviation guidance.</p>
+<figure>
+<a class="research-figure-link" href="{{ '/images/research/jgr-recalibration-comparison.png' | relative_url }}" aria-label="View larger figure: Recalibration and forecast improvement">
+<img src="{{ '/images/research/jgr-recalibration-comparison.png' | relative_url }}" alt="Two-by-two panel arrangement: Fig. 7(a) Option 1 forecast at upper left, Fig. 8(a) deterministic ROC curves at upper right, Fig. 7(c) Option 2 forecast at lower left, and Fig. 8(b) ensemble-mean ROC curves at lower right." loading="lazy" decoding="async"></a>
+<figcaption>Upper left, Fig. 7(a): Option 1; lower left, Fig. 7(c): Option 2, both for the same 200 hPa forecast as above. Upper right, Fig. 8(a): deterministic forecasts; lower right, Fig. 8(b): ensemble-mean forecasts, evaluated for January and July 2023. Each right-hand panel compares all three versions: control (solid), Option 1 (dotted), and Option 2 (dashed). Colors indicate the same altitude ranges as above. Source: Ko et al. (2025, JGR).</figcaption>
+</figure>
+</div>
+<p class="research-source"><strong>Related paper:</strong> Ko et al. (2025), <em>Journal of Geophysical Research: Atmospheres</em>. <a href="https://doi.org/10.1029/2024JD043158">Read the article</a> &middot; <a href="{{ '/publication/2025-ecmwf-forecasts' | relative_url }}">Publication summary</a></p>
+</section>
+<section id="climate-observations">
+<h2 id="climate">Turbulence in a changing climate</h2>
+<h3>Observed changes in fine-scale wind shear</h3>
+<div class="research-block">
+<p>How is the atmosphere changing at the small vertical scales relevant to turbulence? I address this question using high-resolution radiosonde observations. An analysis of 20 years of measurements from 68 stations across the contiguous United States revealed stronger increases in fine-scale vertical wind shear than in conventional bulk-layer estimates.</p>
+<p>Between 300 and 200 hPa, the annual mean of profile-maximum shear increased by 7.4% per decade during 2005-2024. These observations highlight the importance of resolving thin shear layers when assessing atmospheric change and potential aviation hazards. The result describes a regional wind-shear trend; it does not directly measure an increase in turbulence encounters.</p>
+<figure>
+<a class="research-figure-link" href="{{ '/images/research/npj-shear-trends.png' | relative_url }}" aria-label="View larger figure: Observed changes in fine-scale wind shear">
+<img src="{{ '/images/research/npj-shear-trends.png' | relative_url }}" alt="Annual, winter, and summer trends in vertical wind shear between 300 and 200 hPa, comparing fine-scale maximum and mean shear with bulk-layer radiosonde and ERA5 estimates." loading="lazy" decoding="async"></a>
+<figcaption>Observed trends in vertical wind shear between 300 and 200 hPa at 68 U.S. radiosonde stations during 2005-2024. Fine-scale mean and maximum shear increase more rapidly than bulk-layer estimates. Annual and seasonal averages are shown. Source: Ko and Chun (2026), Fig. 3.</figcaption>
+</figure>
+</div>
+<p class="research-source"><strong>Related paper:</strong> Ko and Chun (2026), <em>npj Climate and Atmospheric Science</em>. <a href="https://doi.org/10.1038/s41612-026-01466-w">Read the article</a> &middot; <a href="{{ '/publication/wind-shear-trend' | relative_url }}">Publication summary</a></p>
+</section>
+<section id="climate-projections">
+<h3>Climate change and solar geoengineering</h3>
+<div class="research-block">
+<p>I investigate how climate change and proposed climate interventions could reshape the atmospheric conditions associated with aviation turbulence. Using simulations from three climate models, we compared warming scenarios with stratospheric aerosol injection experiments.</p>
+<p>By 2069, globally averaged annual counts of diagnosed moderate-or-greater turbulence at 200 hPa increased relative to 2024 under warming, but declined below the 2024 reference level in the aerosol-injection scenarios analyzed. The size and geographical pattern of these changes varied across models and scenarios. Because these climate models do not resolve aircraft-scale turbulence directly, the results concern diagnosed turbulence potential. This research examines how different climate pathways could affect aviation-relevant atmospheric conditions.</p>
+<figure>
+<a class="research-figure-link" href="{{ '/images/research/erl-climate-scenarios.png' | relative_url }}" aria-label="View larger figure: Climate change and solar geoengineering">
+<img src="{{ '/images/research/erl-climate-scenarios.png' | relative_url }}" alt="Time series of normalized model-diagnosed moderate-or-greater turbulence at 200 hPa under warming scenarios and stratospheric aerosol injection experiments, with 2024 as the reference." loading="lazy" decoding="async"></a>
+<figcaption>Model-derived annual counts of moderate-or-greater turbulence at 200 hPa, normalized to 2024, increase under warming and decline in the aerosol-injection experiments analyzed. Thick lines show ensemble means; thin lines show individual realizations. Responses depend on both the climate model and scenario. Source: Ko et al. (2026), Fig. 2.</figcaption>
+</figure>
+</div>
+<p class="research-source"><strong>Related paper:</strong> Ko et al. (2026), <em>Environmental Research Letters</em>. <a href="https://doi.org/10.1088/1748-9326/ae7b5c">Read the article</a> &middot; <a href="{{ '/publication/2026-geoengineering' | relative_url }}">Publication summary</a></p>
+</section>
+</div>
