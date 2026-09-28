@@ -4,12 +4,12 @@ collection: "publications"
 layout: "publication"
 category: "manuscripts"
 permalink: "/publication/wind-shear-trend"
-status: "Accepted"
+status: "Published"
 publication_order: 3
 authors: "Ko, H.-C., and H.-Y. Chun"
 journal: "npj Climate and Atmospheric Science"
-publication_year: ""
-details: ""
+publication_year: 2026
+details: "9, 187"
 doi: "10.1038/s41612-026-01466-w"
 author_profile: true
 ---
