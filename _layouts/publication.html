@@ -8,7 +8,7 @@ layout: default
     <div class="page__inner-wrap">
       <header>
         <h1 class="page__title" itemprop="headline">{{ page.title | escape }}</h1>
-        <p>{{ page.authors | escape }}</p>
+        <p>{{ page.authors | escape | replace: 'Ko, H.-C.', '<strong><u>Ko, H.-C.</u></strong>' | replace: 'H.-C. Ko', '<strong><u>H.-C. Ko</u></strong>' }}</p>
         <p>
         {% if page.status == 'Published' %}
           Published in <em>{{ page.journal | escape }}</em>, {{ page.publication_year }}.

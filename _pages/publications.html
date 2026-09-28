@@ -19,7 +19,7 @@ author_profile: true
     {% for paper in group %}
       <article class="archive__item">
         <h3><a href="{{ paper.url | relative_url }}">{{ paper.title | escape }}</a></h3>
-        <p>{{ paper.authors | escape }}.<br>
+        <p>{{ paper.authors | escape | replace: 'Ko, H.-C.', '<strong><u>Ko, H.-C.</u></strong>' | replace: 'H.-C. Ko', '<strong><u>H.-C. Ko</u></strong>' }}.<br>
         {% if status == 'Published' %}
           {{ paper.publication_year }}. <em>{{ paper.journal | escape }}</em>, {{ paper.details | escape }}.
         {% elsif status == 'Accepted' %}
