@@ -7,13 +7,13 @@ redirect_from:
   - /about.html
 ---
 
-I am Han-Chang Ko, a postdoctoral researcher in the Department of Atmospheric Sciences at the University of Hawaiʻi at Mānoa.
+I am Han-Chang Ko, a postdoctoral researcher in Professor Hongwei Sun’s research group in the Department of Atmospheric Sciences at the University of Hawaiʻi at Mānoa.
 
 My research focuses on atmospheric turbulence: where it occurs, how it forms, and how it varies across regions and over time. I use high-resolution radiosonde and aircraft observations, together with numerical models, to investigate turbulence in the free atmosphere and its implications for aviation.
 
 I develop and validate observation-based methods for estimating turbulence and work on evaluating and improving aviation turbulence forecasts. My research also examines how climate change and solar geoengineering may affect atmospheric turbulence and aviation hazards.
 
-I received my Ph.D. from Yonsei University in 2025. My dissertation investigated the characteristics and sources of turbulence in the free atmosphere and their application to aviation turbulence. Before joining the University of Hawaiʻi at Mānoa in January 2026, I was a postdoctoral researcher at Yonsei University. I have also undertaken visiting research collaborations at the National Center for Atmospheric Research (NCAR) and the European Centre for Medium-Range Weather Forecasts (ECMWF).
+I received my Ph.D. from Yonsei University in February 2025 under the supervision of Professor Hye-Yeong Chun. My dissertation investigated the characteristics and sources of turbulence in the free atmosphere and their application to aviation turbulence. Before joining the University of Hawaiʻi at Mānoa in January 2026, I was a postdoctoral researcher at Yonsei University. I have also undertaken visiting research collaborations at the National Center for Atmospheric Research (NCAR) and the European Centre for Medium-Range Weather Forecasts (ECMWF).
 
 ## Research Interests
 

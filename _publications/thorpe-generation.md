@@ -4,13 +4,13 @@ collection: "publications"
 layout: "publication"
 category: "manuscripts"
 permalink: "/publication/thorpe-generation"
-status: "Accepted"
+status: "Published"
 publication_order: 2
 authors: "Ko, H.-C., and H.-Y. Chun"
 journal: "Geophysical Research Letters"
-publication_year: ""
-details: ""
-doi: ""
+publication_year: "2026"
+details: "53(19), e2026GL123020"
+doi: "10.1029/2026GL123020"
 author_profile: true
 ---
 

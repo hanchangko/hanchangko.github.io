@@ -7,14 +7,15 @@ redirect_from:
   - /resume
 ---
 
-<a class="btn btn--primary" href="{{ '/files/Han-Chang_Ko_CV.pdf' | relative_url }}" download>Download CV (PDF)</a>
+<a class="btn btn--primary" href="{{ '/files/Han-Chang_Ko_CV.pdf' | relative_url }}?v=20261006" download>Download CV (PDF)</a>
 
-*CV updated September 21, 2026.*
+*CV updated October 6, 2026.*
 
 ## Professional Experience
 
 **Postdoctoral Researcher** — January 2026–Present  
-Department of Atmospheric Sciences, University of Hawaiʻi at Mānoa, USA
+Department of Atmospheric Sciences, University of Hawaiʻi at Mānoa, USA  
+Research group: Professor Hongwei Sun
 
 **Postdoctoral Researcher** — March–December 2025  
 Department of Atmospheric Sciences, Yonsei University, South Korea
